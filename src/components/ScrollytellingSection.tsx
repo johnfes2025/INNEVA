@@ -62,6 +62,8 @@ export const ScrollytellingSection: React.FC = () => {
             <img
               src={IMAGES.sofaSlider}
               alt="Superficie limpia y renovada"
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover brightness-105 contrast-105"
               referrerPolicy="no-referrer"
             />
@@ -77,6 +79,8 @@ export const ScrollytellingSection: React.FC = () => {
               <img
                 src={IMAGES.sofaSlider}
                 alt="Superficie antes de la limpieza"
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover filter brightness-65 contrast-135 sepia-[0.4] saturate-150"
                 referrerPolicy="no-referrer"
               />

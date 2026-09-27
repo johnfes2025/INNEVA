@@ -51,13 +51,15 @@ export const TestimonialsSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* Author info */}
+              {/* Review source info */}
               <div className="pt-3 border-t border-white/10 flex items-center justify-between">
                 <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-white">
-                    {item.author}
-                  </h4>
-                  <span className="text-[11px] sm:text-xs text-[#72D6C8]">
+                  {item.author && (
+                    <h4 className="text-xs sm:text-sm font-bold text-white">
+                      {item.author}
+                    </h4>
+                  )}
+                  <span className="text-[11px] sm:text-xs text-[#72D6C8] font-medium">
                     {item.source}
                   </span>
                 </div>

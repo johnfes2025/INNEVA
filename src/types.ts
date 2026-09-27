@@ -22,7 +22,7 @@ export interface StepItem {
 }
 
 export interface TestimonialItem {
-  author: string;
+  author?: string;
   quote: string;
   rating: number;
   source: string;

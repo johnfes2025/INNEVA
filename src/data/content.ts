@@ -10,19 +10,19 @@ import sofaSliderImg from '../assets/images/sofa_slider_1789487717404.jpg';
 
 import { ServiceItem, BenefitItem, StepItem, TestimonialItem, FaqItem, GalleryItem } from '../types';
 
-export const HERO_ANIMATION_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/Cleaning_sofa_with_extraction_va_20260914100513-ezgif.com-video-to-webp-converter.webp?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvQ2xlYW5pbmdfc29mYV93aXRoX2V4dHJhY3Rpb25fdmFfMjAyNjA5MTQxMDA1MTMtZXpnaWYuY29tLXZpZGVvLXRvLXdlYnAtY29udmVydGVyLndlYnAiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg5Njc4MDEzLCJleHAiOjE4MjEyMTQwMTN9.imlYHlVKYp1YDkFDrk7_a6WgogQeouHbhYyo8W_IE9c-XbHVSsBQhowP-Lar0UsXoYJfYo0VmZ2gbEluzAXRkg";
+export const HERO_ANIMATION_URL = "/hero-animation.webp";
 export const LOCAL_HERO_ANIMATION = "/hero-animation.webp";
 
-export const MUEBLES_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/lavado%20de%20muebles.avif?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGF2YWRvIGRlIG11ZWJsZXMuYXZpZiIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODk2ODU3MjMsImV4cCI6MTgyMTIyMTcyM30.z-yXwejq0Xrh5QwgdV5aklCN0K7YWw_9GUeHZ7PWvcHX4T_tyINkyblQpyaBablON8E-hzPIOs6rcR2_oPTpwA";
-export const MUEBLES_2_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/lavado%20de%20muebles%202.webp?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGF2YWRvIGRlIG11ZWJsZXMgMi53ZWJwIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4OTY4NjMyMSwiZXhwIjoxODIxMjIyMzIxfQ.oUaMz4BHEVmP5ThhIl4pXZFmBVVwAcDF_NH3O3lQoShSe2-S8HEhjIMD52ka0hwEu0bwB8XCofjWzO3Bd1Fiww";
-export const COLCHONES_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/lavado%20de%20colchones%202.webp?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGF2YWRvIGRlIGNvbGNob25lcyAyLndlYnAiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg5OTk0MDUyLCJleHAiOjE4MjE1MzAwNTJ9.FC31RfpDVLYTBd1vFroIeLCfdlk1fzulgD8kd8AIZ4IHfoHBqqsjeW3JwRDV7-gUYL64vMLOta_x3eQTBqdDwA";
-export const ALFOMBRAS_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/lavado%20de%20tapetes%202.webp?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGF2YWRvIGRlIHRhcGV0ZXMgMi53ZWJwIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4OTk5Mzg2OSwiZXhwIjoxODIxNTI5ODY5fQ.Cy8LJwJWtUnP018CrKXb-C_4QDqqQfzQy1h4acMWHa9eq1OdmuVomu9DNeHLDFZEXm3tVhJgakzGfVJWgGs9Jg";
-export const VEHICULOS_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/detailing%20de%20autos.avif?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvZGV0YWlsaW5nIGRlIGF1dG9zLmF2aWYiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg5Njc5Njk3LCJleHAiOjE4MjEyMTU2OTd9.Iy4rQPf03dCQCMR9N5sXRLSDX03kM07hVJf2N7QwBazdh38ryVHea_teBMShxRC6MyriajkEbsq8OnhinvdykA";
-export const CUERO_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/Limpieza-de-cuero.avif?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvTGltcGllemEtZGUtY3Vlcm8uYXZpZiIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODk2ODAyMTMsImV4cCI6MTgyMTIxNjIxM30.yde6S0q6f8JL5kMLnbo5mWYX0gFPz8T4tJEsgdqcusPTXJZLeseckKPtETqTvGUp_Q3dAxUwngT19lMMy6YFdw";
-export const PERSIANAS_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/Limpieza-de-persianas-y-paneles-japoneses.avif?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvTGltcGllemEtZGUtcGVyc2lhbmFzLXktcGFuZWxlcy1qYXBvbmVzZXMuYXZpZiIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODk2ODA1MzIsImV4cCI6MTgyMTIxNjUzMn0.i9bMfvQIYzDCzjtNQ76qY7mld007Oah5es09wW0TWRaiEhbD-SjwBynnkU7jM0tGjWSsQliGODE4Jsjv9AIS2w";
-export const PISOS_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/Limpieza%20de%20pisos%20y%20superficies.avif?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvTGltcGllemEgZGUgcGlzb3MgeSBzdXBlcmZpY2llcy5hdmlmIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4OTY4MDY3MiwiZXhwIjoxODIxMjE2NjcyfQ._rvsFHxXd9G3EozHPO-uUth4sxeX_n2NgOt8S01CA4GofmtI1Dvk90dJr6KHUimg4XQQ8-wvW1Tsrmi6to4lRQ";
-export const MOTOS_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/lavado%20de%20motos%202.png?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGF2YWRvIGRlIG1vdG9zIDIucG5nIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4OTk5NDY1MSwiZXhwIjoxODIxNTMwNjUxfQ.OeiKfe8yAm_98XszB9iWGsJwXQdrmEK9TuH1taIxdzGCAOy9RFlkIWJ3ShhpRg6kbwb5gzeYT9FS2v3XIzTLtA";
-export const CORTINAS_IMAGE_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/limpieza%20de%20cortinas%20inneva.webp?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGltcGllemEgZGUgY29ydGluYXMgaW5uZXZhLndlYnAiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg5OTE3NjA0LCJleHAiOjE4MjE0NTM2MDR9.DL423-lwcX_DAKQ3_xBe2KIEUynMFOsowKID41pjCaq5ERw4wzM1rqPnNVqJPmkM-FDf86a0EdYM1oPFHIcSsw";
+export const MUEBLES_IMAGE_URL = "/lavado-de-muebles.avif";
+export const MUEBLES_2_IMAGE_URL = "/lavado-de-muebles-2.webp";
+export const COLCHONES_IMAGE_URL = "/lavado-de-colchones-2.webp";
+export const ALFOMBRAS_IMAGE_URL = "/lavado-de-tapetes-2.webp";
+export const VEHICULOS_IMAGE_URL = "/detailing-de-autos.avif";
+export const CUERO_IMAGE_URL = "/limpieza-de-cuero.avif";
+export const PERSIANAS_IMAGE_URL = "/limpieza-de-persianas.avif";
+export const PISOS_IMAGE_URL = "/limpieza-de-pisos.avif";
+export const MOTOS_IMAGE_URL = "/lavado-de-motos-2.webp";
+export const CORTINAS_IMAGE_URL = "/limpieza-de-cortinas.webp";
 
 export const IMAGES = {
   hero: heroImg,
@@ -183,20 +183,17 @@ export const PROCESS_STEPS: StepItem[] = [
 
 export const TESTIMONIALS: TestimonialItem[] = [
   {
-    author: 'Familia Ramírez G.',
-    quote: 'Excelente servicio muy buena calidad, recomendadísimo. Dejaron el sofá de la sala como nuevo y el secado fue rápido.',
+    quote: 'Excelente servicio muy buena calidad, recomendadisimo',
     rating: 5,
     source: 'Reseña de Google',
   },
   {
-    author: 'Carlos E. Duque',
-    quote: 'Excelente servicio personal cualificado y productos de calidad. Muy puntuales y cuidadosos con el resto del apartamento.',
+    quote: 'Excelente servicio personal cualificado y productos de calidad.',
     rating: 5,
     source: 'Reseña de Google',
   },
   {
-    author: 'Mariana Restrepo',
-    quote: 'Una empresa que cumple totalmente tus expectativas recomendadísimos. El colchón y las sillas del comedor quedaron impecables.',
+    quote: 'Una empresa que cumple totalmente tus expectativas recomendadicimos',
     rating: 5,
     source: 'Reseña de Google',
   },

@@ -121,6 +121,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                         (e.currentTarget as HTMLImageElement).src = '/limpieza-de-pisos.avif';
                       } else if (service.id === 'motos') {
                         (e.currentTarget as HTMLImageElement).src = '/lavado-de-motos-2.webp';
+                      } else if (service.id === 'cortinas') {
+                        (e.currentTarget as HTMLImageElement).src = '/limpieza-de-cortinas.webp';
                       }
                     }}
                   />
