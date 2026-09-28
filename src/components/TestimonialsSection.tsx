@@ -1,6 +1,6 @@
 import React from 'react';
-import { TESTIMONIALS } from '../data/content';
-import { Star, Quote } from 'lucide-react';
+import { TESTIMONIALS, GOOGLE_BUSINESS_LINK } from '../data/content';
+import { Star, Quote, ExternalLink } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
   return (
@@ -17,17 +17,24 @@ export const TestimonialsSection: React.FC = () => {
           </h2>
 
           {/* Google 5.0 Rating Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#073F46] border border-[#72D6C8]/40 px-3.5 py-1.5 rounded-full shadow-md">
+          <a
+            href={GOOGLE_BUSINESS_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#073F46] hover:bg-[#084b54] border border-[#72D6C8]/40 hover:border-[#72D6C8] px-3.5 py-1.5 rounded-full shadow-md transition-all group cursor-pointer"
+            title="Ver ficha de INNEVA en Google"
+          >
             <span className="text-sm font-black text-white">5.0</span>
             <div className="flex text-[#FBBF24]">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-3.5 h-3.5 fill-current" />
               ))}
             </div>
-            <span className="text-xs text-[#EEF4F3]/80 font-medium">
+            <span className="text-xs text-[#EEF4F3]/90 font-medium group-hover:text-white transition-colors">
               · Reseñas verificadas en Google
             </span>
-          </div>
+            <ExternalLink className="w-3 h-3 text-[#72D6C8] opacity-70 group-hover:opacity-100 transition-opacity" />
+          </a>
         </div>
 
         {/* 3 Testimonials Grid */}
@@ -55,13 +62,20 @@ export const TestimonialsSection: React.FC = () => {
               <div className="pt-3 border-t border-white/10 flex items-center justify-between">
                 <div>
                   {item.author && (
-                    <h4 className="text-xs sm:text-sm font-bold text-white">
+                    <h4 className="text-xs sm:text-sm font-bold text-white mb-0.5">
                       {item.author}
                     </h4>
                   )}
-                  <span className="text-[11px] sm:text-xs text-[#72D6C8] font-medium">
-                    {item.source}
-                  </span>
+                  <a
+                    href={GOOGLE_BUSINESS_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-[#72D6C8] hover:text-[#8FE300] hover:underline font-medium transition-colors cursor-pointer group/link"
+                    title="Ver reseña de Google de INNEVA"
+                  >
+                    <span>{item.source || 'Ver reseña de Google'}</span>
+                    <ExternalLink className="w-3 h-3 opacity-70 group-hover/link:opacity-100 transition-opacity" />
+                  </a>
                 </div>
                 <Quote className="w-5 h-5 text-[#72D6C8]/30" />
               </div>

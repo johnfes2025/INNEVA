@@ -10,8 +10,11 @@ import sofaSliderImg from '../assets/images/sofa_slider_1789487717404.jpg';
 
 import { ServiceItem, BenefitItem, StepItem, TestimonialItem, FaqItem, GalleryItem } from '../types';
 
-export const HERO_ANIMATION_URL = "/hero-animation.webp";
-export const LOCAL_HERO_ANIMATION = "/hero-animation.webp";
+export const HERO_VIDEO_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/hero%20optimizado.webm?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvaGVybyBvcHRpbWl6YWRvLndlYm0iLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzkwNTk2MTgyLCJleHAiOjE4MjIxMzIxODJ9.Sp2Zx-fdOINmsb6fdDhGMpqML4483RUhtFcwERGBhEPFBl1rM4vdp5C4xoyAk0DZukNAB0A76isleEZlbBFP5w";
+export const LOCAL_HERO_VIDEO = "/hero-video.webm";
+export const HERO_POSTER_URL = "/hero-poster.webp";
+export const HERO_ANIMATION_URL = HERO_VIDEO_URL;
+export const LOCAL_HERO_ANIMATION = LOCAL_HERO_VIDEO;
 
 export const MUEBLES_IMAGE_URL = "/lavado-de-muebles.avif";
 export const MUEBLES_2_IMAGE_URL = "/lavado-de-muebles-2.webp";
@@ -41,6 +44,7 @@ export const DISPLAY_PHONE = '310 535 6080';
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola INNEVA SOLUCIONES, me gustaría cotizar un servicio de limpieza profesional.')}`;
 export const OFFICIAL_ADDRESS = 'Cl. 30 # CRA 30, San Diego, 630007, Armenia, Quindío, Colombia';
 export const OFFICIAL_CITY = 'Armenia, Quindío, Colombia';
+export const GOOGLE_BUSINESS_LINK = 'https://www.google.com/maps/search/?api=1&query=INNEVA+SOLUCIONES+Armenia+Quindio';
 
 export const BENEFITS: BenefitItem[] = [
   {
@@ -185,17 +189,17 @@ export const TESTIMONIALS: TestimonialItem[] = [
   {
     quote: 'Excelente servicio muy buena calidad, recomendadisimo',
     rating: 5,
-    source: 'Reseña de Google',
+    source: 'Ver reseña de Google',
   },
   {
     quote: 'Excelente servicio personal cualificado y productos de calidad.',
     rating: 5,
-    source: 'Reseña de Google',
+    source: 'Ver reseña de Google',
   },
   {
     quote: 'Una empresa que cumple totalmente tus expectativas recomendadicimos',
     rating: 5,
-    source: 'Reseña de Google',
+    source: 'Ver reseña de Google',
   },
 ];
 

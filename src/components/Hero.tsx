@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
-import { IMAGES, WHATSAPP_LINK, HERO_ANIMATION_URL, LOCAL_HERO_ANIMATION } from '../data/content';
+import React from 'react';
+import { IMAGES, WHATSAPP_LINK, HERO_VIDEO_URL, LOCAL_HERO_VIDEO, HERO_POSTER_URL } from '../data/content';
 import { ArrowRight, MapPin, Sparkles, Leaf, Users, Home } from 'lucide-react';
 import { StarButton } from './StarButton';
 import { SparklesText } from './ui/sparkles-text';
 
 export const Hero: React.FC = () => {
-  const [imgSrc, setImgSrc] = useState(LOCAL_HERO_ANIMATION);
-
-  const handleImgError = () => {
-    if (imgSrc === LOCAL_HERO_ANIMATION) {
-      setImgSrc(HERO_ANIMATION_URL);
-    } else {
-      setImgSrc(IMAGES.hero);
-    }
-  };
 
   const benefits = [
     {
@@ -41,7 +32,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative w-full flex flex-col justify-between overflow-hidden bg-[#072B30] pt-[58px] sm:pt-[66px] lg:pt-0 lg:min-h-screen lg:h-screen lg:max-h-[1000px]"
+      className="relative w-full flex flex-col justify-between overflow-hidden bg-[#072B30] pt-[58px] sm:pt-[66px] lg:pt-0 min-h-[580px] lg:min-h-[630px] lg:h-[660px] xl:h-[700px]"
     >
       {/* 1. Mobile Format Only: Location Tag ABOVE the reproduction video */}
       <div className="lg:hidden w-full bg-[#072B30] px-5 sm:px-8 pt-3.5 pb-2.5">
@@ -54,23 +45,23 @@ export const Hero: React.FC = () => {
       {/* Video reproduction in Mobile with Animated Title OVERLAID on the left */}
       <div className="lg:hidden w-full relative bg-[#062428]">
         <div className="w-full aspect-[16/10] sm:aspect-video relative overflow-hidden shadow-inner">
-          <img
-            src={imgSrc}
-            onError={handleImgError}
-            alt="Lavado y desinfección de muebles a domicilio en Armenia | INNEVA"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={HERO_POSTER_URL}
+            preload="auto"
             className="w-full h-full object-cover object-[70%_center]"
-            referrerPolicy="no-referrer"
-            decoding="async"
-            loading="eager"
-            fetchPriority="high"
-            width={854}
-            height={480}
-          />
+          >
+            <source src={HERO_VIDEO_URL} type="video/webm" />
+            <source src={LOCAL_HERO_VIDEO} type="video/webm" />
+          </video>
 
           {/* Smooth contrast gradient overlay for mobile video readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#072B30]/95 via-[#072B30]/65 to-transparent w-full sm:w-[75%]" />
-          <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#072B30]/70 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#072B30] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#072B30]/95 via-[#072B30]/65 to-transparent w-full sm:w-[75%] pointer-events-none" />
+          <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#072B30]/70 to-transparent pointer-events-none" />
+          <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#072B30] to-transparent pointer-events-none" />
 
           {/* Overlaid Title on the left of the video */}
           <div className="absolute inset-0 z-10 flex flex-col justify-center px-5 sm:px-8 max-w-[290px] sm:max-w-[340px]">
@@ -109,31 +100,29 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. Desktop Format Only: background animation & overlays exactly matching reference */}
-      <div className="hidden lg:block absolute inset-0 pointer-events-none">
-        <img
-          src={imgSrc}
-          onError={handleImgError}
-          alt="Lavado de muebles y colchones a domicilio en Armenia | INNEVA"
-          className="w-full h-full object-cover object-[68%_center]"
-          referrerPolicy="no-referrer"
-          decoding="async"
-          loading="eager"
-          fetchPriority="high"
-          width={854}
-          height={480}
-        />
-        {/* Controlled Gradient Overlays for desktop */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#072B30] via-[#072B30]/90 via-46% to-transparent" />
-        <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#072B30]/50 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#072B30]/60 to-transparent" />
+      {/* 2. Desktop Format: Full horizontal video background matching reference */}
+      <div className="hidden lg:block absolute inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={HERO_POSTER_URL}
+          preload="auto"
+          className="w-full h-full object-cover object-[75%_center] xl:object-[78%_center]"
+        >
+          <source src={HERO_VIDEO_URL} type="video/webm" />
+          <source src={LOCAL_HERO_VIDEO} type="video/webm" />
+        </video>
+        {/* Controlled Gradient Overlays for desktop that blend seamlessly into #072B30 */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#072B30] via-[#072B30]/85 via-42% to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#072B30]/60 to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#072B30]/70 to-transparent pointer-events-none" />
       </div>
 
       {/* 3. Text Content & Actions */}
-      {/* On desktop: includes title, subtitle, buttons and location aligned to the left over background. */}
-      {/* On mobile: contains subtitle and buttons placed below the video. */}
-      <div className="max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-12 xl:px-16 w-full pt-4 sm:pt-6 lg:pt-36 xl:pt-40 pb-5 lg:my-auto relative z-10">
-        <div className="max-w-[500px]">
+      <div className="max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-12 xl:px-16 w-full pt-4 sm:pt-6 lg:pt-28 xl:pt-32 pb-4 sm:pb-6 relative z-10">
+        <div className="max-w-[520px]">
           
           {/* Desktop Kicker Location Tag */}
           <div className="hidden lg:flex items-center gap-1.5 text-xs text-[#CBD5E1] font-normal mb-3">
@@ -167,16 +156,16 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Short decorative accent line */}
-            <div className="w-10 h-[2px] bg-[#18A2B0] mt-3 rounded-full" />
+            <div className="w-10 h-[2.5px] bg-[#18A2B0] mt-3 rounded-full" />
           </div>
 
           {/* Subtitle Paragraph (positioned below video in mobile) */}
-          <p className="text-[15px] font-normal text-center text-[#E2E8F0]/85 max-w-[440px] leading-relaxed mb-5 sm:mb-6 mx-auto">
+          <p className="text-[15px] font-normal text-center lg:text-left text-[#E2E8F0]/85 max-w-[480px] leading-relaxed mb-5 sm:mb-6 mx-auto lg:mx-0">
             Lavamos y desinfectamos muebles, colchones, alfombras, tapicería y vehículos con tecnología especializada y productos ecoamigables en Armenia, Quindío.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-5">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto mb-3">
             <StarButton
               href={WHATSAPP_LINK}
               target="_blank"
