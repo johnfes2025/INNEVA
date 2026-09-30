@@ -2,13 +2,14 @@ import React from 'react';
 import { IMAGES, WHATSAPP_NUMBER } from '../data/content';
 import { ArrowRight } from 'lucide-react';
 import { StarButton } from './StarButton';
+import { Link } from '../navigation';
 
 export const MattressSection: React.FC = () => {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola INNEVA SOLUCIONES, me gustaría cotizar la limpieza y desinfección de colchones.')}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola INNEVA SOLUCIONES, me gustaría cotizar la limpieza profesional de colchones a domicilio en Armenia.')}`;
 
   const pills = [
     'Limpieza profunda',
-    'Desinfección',
+    'Extracción de suciedad',
     'Eliminación de malos olores',
     'Cuidado profesional',
   ];
@@ -30,7 +31,7 @@ export const MattressSection: React.FC = () => {
             <div className="w-full relative rounded-3xl overflow-hidden shadow-2xl shadow-black/70 border border-white/15 bg-[#082B30] group">
               <img
                 src={IMAGES.mattress}
-                alt="Limpieza profesional y desinfección de colchones a domicilio en Armenia | INNEVA"
+                alt="Limpieza profesional de colchones a domicilio en Armenia | INNEVA"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-auto block group-hover:scale-[1.015] transition-transform duration-700 ease-out"
@@ -88,6 +89,16 @@ export const MattressSection: React.FC = () => {
               <ArrowRight className="w-4 h-4" />
             </StarButton>
 
+            {/* Natural Internal Link to Service Page */}
+            <div className="mt-4">
+              <Link
+                href="/lavado-colchones-armenia"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#72D6C8] hover:text-white transition-colors"
+              >
+                <span>Ver detalles del servicio de lavado de colchones en Armenia</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
           </div>
 
         </div>

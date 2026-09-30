@@ -6,7 +6,7 @@ export const BenefitsBar: React.FC = () => {
     {
       icon: <Cpu className="w-5 h-5 text-[#72D6C8]" />,
       title: 'Tecnología especializada',
-      desc: 'Equipos de última generación',
+      desc: 'Equipos profesionales para limpieza y extracción',
     },
     {
       icon: <Leaf className="w-5 h-5 text-[#72D6C8]" />,

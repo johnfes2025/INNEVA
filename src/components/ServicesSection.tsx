@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { SERVICES, WHATSAPP_LINK, IMAGES } from '../data/content';
 import { ArrowRight, ChevronDown, ChevronUp, Check } from 'lucide-react';
 import { ServiceItem } from '../types';
+import { Link } from '../navigation';
 
 interface ServicesSectionProps {
   onSelectService?: (service: ServiceItem) => void;
@@ -79,7 +80,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 case 'persianas':
                   return 'Limpieza de persianas y paneles japoneses en Armenia | INNEVA';
                 case 'cortinas':
-                  return 'Limpieza y desinfección de cortinas en Armenia | INNEVA';
+                  return 'Limpieza profesional de cortinas en Armenia | INNEVA';
                 case 'pisos':
                   return 'Limpieza y tratamiento de pisos en Armenia | INNEVA';
                 case 'motos':
@@ -182,6 +183,39 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
 
                   {/* Bottom CTA Button */}
                   <div className="pt-4 border-t border-white/10 mt-auto">
+                    {service.id === 'muebles' && (
+                      <div className="mb-3">
+                        <Link
+                          href="/lavado-muebles-armenia"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#72D6C8] hover:text-white transition-colors"
+                        >
+                          <span>Ver servicio de lavado de muebles en Armenia</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    )}
+                    {service.id === 'colchones' && (
+                      <div className="mb-3">
+                        <Link
+                          href="/lavado-colchones-armenia"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#72D6C8] hover:text-white transition-colors"
+                        >
+                          <span>Ver servicio de lavado de colchones en Armenia</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    )}
+                    {service.id === 'alfombras' && (
+                      <div className="mb-3">
+                        <Link
+                          href="/lavado-alfombras-armenia"
+                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#72D6C8] hover:text-white transition-colors"
+                        >
+                          <span>Ver servicio de lavado de alfombras en Armenia</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    )}
                     <a
                       href={getServiceWhatsAppUrl(service.title)}
                       target="_blank"

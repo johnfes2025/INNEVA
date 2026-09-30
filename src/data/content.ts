@@ -10,10 +10,8 @@ import sofaSliderImg from '../assets/images/sofa_slider_1789487717404.jpg';
 
 import { ServiceItem, BenefitItem, StepItem, TestimonialItem, FaqItem, GalleryItem } from '../types';
 
-export const HERO_VIDEO_URL = "https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/hero%20optimizado.webm?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvaGVybyBvcHRpbWl6YWRvLndlYm0iLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzkwNTk2MTgyLCJleHAiOjE4MjIxMzIxODJ9.Sp2Zx-fdOINmsb6fdDhGMpqML4483RUhtFcwERGBhEPFBl1rM4vdp5C4xoyAk0DZukNAB0A76isleEZlbBFP5w";
 export const LOCAL_HERO_VIDEO = "/hero-video.webm";
 export const HERO_POSTER_URL = "/hero-poster.webp";
-export const HERO_ANIMATION_URL = HERO_VIDEO_URL;
 export const LOCAL_HERO_ANIMATION = LOCAL_HERO_VIDEO;
 
 export const MUEBLES_IMAGE_URL = "/lavado-de-muebles.avif";
@@ -50,7 +48,7 @@ export const BENEFITS: BenefitItem[] = [
   {
     icon: 'Sparkles',
     title: 'Tecnología especializada',
-    description: 'Equipos de última generación',
+    description: 'Equipos profesionales para limpieza y extracción',
   },
   {
     icon: 'Leaf',
@@ -86,8 +84,8 @@ export const SERVICES: ServiceItem[] = [
     title: 'Limpieza de colchones',
     description: 'Realizamos limpieza profesional de colchones a domicilio en Armenia, utilizando procesos especializados para ayudar a retirar suciedad, manchas y malos olores y recuperar una sensación de mayor frescura.',
     image: COLCHONES_IMAGE_URL,
-    category: 'Descanso & Salud',
-    surfaces: ['Colchones individuales', 'Colchones Queen & King', 'Colchonetas y somieres', 'Aspirado y desinfección profunda'],
+    category: 'Descanso & Confort',
+    surfaces: ['Colchones individuales', 'Colchones Queen & King', 'Colchonetas y somieres', 'Aspirado y extracción de humedad'],
     ctaText: 'Cotizar limpieza de colchón',
   },
   {
@@ -210,11 +208,11 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: '¿Qué productos utilizan?',
-    answer: 'Utilizamos fórmulas profesionales biodegradables y ecoamigables de grado profesional, seguras para el hogar y la familia, dejando un aroma fresco sin vapores tóxicos ni residuos agresivos.',
+    answer: 'Utilizamos productos profesionales y fórmulas ecoamigables biodegradables, orientadas al cuidado de la superficie y pensadas para ayudar a retirar suciedad, manchas y malos olores de manera efectiva.',
   },
   {
     question: '¿Cuánto tiempo tarda el servicio?',
-    answer: 'Un servicio regular de sala o colchón toma entre 1.5 y 3 horas, según el tamaño y grado de suciedad. Gracias a nuestro sistema de extracción por inyección-succión de alta potencia, el tiempo de secado promedio es de 3 a 5 horas.',
+    answer: 'El tiempo del servicio puede variar según el tamaño, el material y el estado de la superficie. Durante el proceso realizamos limpieza y extracción de la humedad utilizada.',
   },
   {
     question: '¿Qué zonas cubren?',
@@ -226,11 +224,11 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: '¿Qué servicios realizan?',
-    answer: 'Realizamos lavado y desinfección profunda de muebles y salas, colchones, alfombras y tapetes, detallado automotriz, cuidado e hidratación de cuero, persianas y paneles japoneses, además de motos y cascos.',
+    answer: 'Realizamos limpieza profesional y lavado de muebles y salas, colchones, alfombras y tapetes, detallado automotriz, cuidado e hidratación de cuero, persianas y paneles japoneses, además de motos y cascos.',
   },
   {
     question: '¿Trabajan vehículos?',
-    answer: 'Sí, atendemos automóviles, camionetas, camperos, motocicletas y cascos a domicilio o en punto coordinado, realizando limpieza profunda de tapicería, techo, suelo, plásticos y desinfección.',
+    answer: 'Sí, atendemos automóviles, camionetas, camperos, motocicletas y cascos a domicilio o en punto coordinado, realizando limpieza profesional de tapicería, techo, suelo y plásticos.',
   },
 ];
 

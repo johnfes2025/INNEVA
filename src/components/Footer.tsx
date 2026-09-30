@@ -2,6 +2,7 @@ import React from 'react';
 import { InnevaLogo } from './InnevaLogo';
 import { DISPLAY_PHONE, WHATSAPP_LINK } from '../data/content';
 import { MapPin, Phone, Instagram, ShieldCheck, Heart } from 'lucide-react';
+import { Link } from '../navigation';
 
 export const Footer: React.FC = () => {
   return (
@@ -14,11 +15,11 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col items-start">
             <InnevaLogo size="md" className="mb-4" />
             <p className="text-sm text-[#EEF4F3]/75 leading-relaxed max-w-sm mb-6">
-              Empresa líder en servicios de limpieza y desinfección profesional de muebles, colchones, tapicerías y vehículos. Cuidamos de tu hogar y del medio ambiente con tecnología de inyección-extracción y fórmulas biodegradables.
+              Empresa líder en servicios de limpieza profesional de muebles, colchones, tapicerías y vehículos en Armenia y Quindío. Cuidamos de tu hogar y del medio ambiente con tecnología de inyección-extracción y fórmulas biodegradables.
             </p>
             <div className="flex items-center gap-2 text-xs text-[#72D6C8] font-semibold bg-[#082B30] px-3.5 py-1.5 rounded-full border border-[#0B6E75]/40">
               <ShieldCheck className="w-4 h-4 text-[#8FE300]" />
-              <span>Servicio profesional garantizado en el Quindío</span>
+              <span>Servicio profesional en el Quindío</span>
             </div>
           </div>
 
@@ -29,13 +30,19 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#EEF4F3]/80">
               <li>
-                <a href="#servicios" className="hover:text-white transition-colors">Lavado de muebles</a>
+                <Link href="/lavado-muebles-armenia" className="hover:text-white transition-colors">
+                  Lavado de muebles
+                </Link>
               </li>
               <li>
-                <a href="#servicios" className="hover:text-white transition-colors">Limpieza de colchones</a>
+                <Link href="/lavado-colchones-armenia" className="hover:text-white transition-colors">
+                  Lavado de colchones
+                </Link>
               </li>
               <li>
-                <a href="#servicios" className="hover:text-white transition-colors">Alfombras y tapetes</a>
+                <Link href="/lavado-alfombras-armenia" className="hover:text-white transition-colors">
+                  Lavado de alfombras y tapetes
+                </Link>
               </li>
               <li>
                 <a href="#servicios" className="hover:text-white transition-colors">Detallado automotriz</a>

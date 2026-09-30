@@ -58,9 +58,6 @@ export const IntroSection: React.FC = () => {
                   decoding="async"
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = 'https://bleqwekikznebkjogjgb.supabase.co/storage/v1/object/sign/innova/limpieza%20profesional%20inneva.webp?token=eyJraWQiOiIwOWEyOGY2OC02MDFiLTQ2OTQtOTNmNS02OTdlNTM0Njg5N2QiLCJhbGciOiJIUzUxMiJ9.eyJ1cmwiOiJpbm5vdmEvbGltcGllemEgcHJvZmVzaW9uYWwgaW5uZXZhLndlYnAiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg5NjA2MTA3LCJleHAiOjE4MjExNDIxMDd9.0oFKmh6mwDfbYM3kwTAa4TejbHK1GMm0y16aXr0xbvjgsys9_7ZzZp8JiN2YttWvZH7ON1maqFD3V-tZBO_04Q';
-                  }}
                 />
               </div>
             </div>

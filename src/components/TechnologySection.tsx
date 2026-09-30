@@ -6,7 +6,7 @@ export const TechnologySection: React.FC = () => {
     {
       icon: <Cpu className="w-8 h-8 text-[#0B6E75]" />,
       title: 'Tecnología especializada',
-      description: 'Equipos de inyección y extracción de alto poder que trabajan a nivel de fibra, desprendiendo manchas y ácaros sin saturar de humedad la superficie.',
+      description: 'Equipos profesionales para realizar procesos de limpieza mediante inyección y extracción, ayudando a retirar suciedad, manchas y humedad utilizada durante el proceso.',
       tag: 'Equipos Profesionales',
     },
     {

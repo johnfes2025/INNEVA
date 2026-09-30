@@ -1,8 +1,8 @@
 import React from 'react';
-import { IMAGES, WHATSAPP_LINK, HERO_VIDEO_URL, LOCAL_HERO_VIDEO, HERO_POSTER_URL } from '../data/content';
+import { IMAGES, WHATSAPP_LINK, LOCAL_HERO_VIDEO, HERO_POSTER_URL } from '../data/content';
 import { ArrowRight, MapPin, Sparkles, Leaf, Users, Home } from 'lucide-react';
 import { StarButton } from './StarButton';
-import { SparklesText } from './ui/sparkles-text';
+import { FlipLink } from './ui/flip-links';
 
 export const Hero: React.FC = () => {
 
@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
     {
       icon: <Sparkles className="w-3.5 h-3.5 text-[#1CB3C2]" />,
       title: 'Tecnología especializada',
-      desc: 'Equipos de última generación',
+      desc: 'Equipos profesionales para limpieza y extracción',
     },
     {
       icon: <Leaf className="w-3.5 h-3.5 text-[#1CB3C2]" />,
@@ -54,7 +54,6 @@ export const Hero: React.FC = () => {
             preload="auto"
             className="w-full h-full object-cover object-[70%_center]"
           >
-            <source src={HERO_VIDEO_URL} type="video/webm" />
             <source src={LOCAL_HERO_VIDEO} type="video/webm" />
           </video>
 
@@ -75,23 +74,10 @@ export const Hero: React.FC = () => {
               >
                 Limpieza profesional <br />
                 que{' '}
-                <SparklesText
-                  inline
-                  text="devuelve la vida"
-                  className="text-[#139AA8] font-bold"
-                  sparklesCount={5}
-                  colors={{ first: '#72D6C8', second: '#8FE300' }}
-                />{' '}
+                <FlipLink className="text-[#139AA8] font-bold">
+                  devuelve la vida
+                </FlipLink>{' '}
                 <br />
-                a tus espacios.
-              </span>
-              <span
-                aria-hidden="true"
-                className="hero-shimmer-layer font-inter font-bold tracking-[-0.03em]"
-                style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
-              >
-                Limpieza profesional <br />
-                que devuelve la vida <br />
                 a tus espacios.
               </span>
             </div>
@@ -111,7 +97,6 @@ export const Hero: React.FC = () => {
           preload="auto"
           className="w-full h-full object-cover object-[75%_center] xl:object-[78%_center]"
         >
-          <source src={HERO_VIDEO_URL} type="video/webm" />
           <source src={LOCAL_HERO_VIDEO} type="video/webm" />
         </video>
         {/* Controlled Gradient Overlays for desktop that blend seamlessly into #072B30 */}
@@ -145,13 +130,9 @@ export const Hero: React.FC = () => {
               style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
             >
               <span className="text-white/90">Limpieza profesional que </span>
-              <SparklesText
-                inline
-                text="devuelve la vida"
-                className="text-[#139AA8] font-bold"
-                sparklesCount={6}
-                colors={{ first: '#72D6C8', second: '#8FE300' }}
-              />{' '}
+              <FlipLink className="text-[#139AA8] font-bold">
+                devuelve la vida
+              </FlipLink>{' '}
               <span className="text-white/90">a tus espacios.</span>
             </div>
 

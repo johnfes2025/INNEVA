@@ -110,7 +110,7 @@ export const VehiclesSection: React.FC = () => {
                 {/* 2nd Image inside expanding layer */}
                 <img
                   src={MOTOS_IMAGE_URL}
-                  alt="Limpieza profunda y desinfección de motos y cascos en Armenia | INNEVA"
+                  alt="Limpieza profunda y detallado de motos y cascos en Armenia | INNEVA"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover object-left"
@@ -128,7 +128,7 @@ export const VehiclesSection: React.FC = () => {
                     <span>Motos & Cascos</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-[#8FE300] text-[11px] font-semibold bg-[#082B30]/90 backdrop-blur-sm px-3 py-1.5 rounded-full border border-[#8FE300]/30">
-                    <span>Detallado & desinfección</span>
+                    <span>Detallado y limpieza de interiores</span>
                   </div>
                 </div>
 

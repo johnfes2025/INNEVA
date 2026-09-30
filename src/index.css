@@ -90,13 +90,41 @@
   background-size: 140px 100%;
   background-repeat: no-repeat;
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
-  animation: heroTitleShimmer 6s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  animation: heroTitleShimmer 3.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-shimmer-layer {
     animation: none !important;
     display: none !important;
+  }
+}
+
+/* Sparkle SVG Animation (Pure CSS replacement for Framer Motion) */
+@keyframes sparklePulse {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+  45%, 55% {
+    opacity: 1;
+    transform: scale(var(--sparkle-target-scale, 1)) rotate(120deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(190deg);
+  }
+}
+
+.sparkle-pulse-anim {
+  animation-name: sparklePulse;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sparkle-pulse-anim {
+    animation: none !important;
   }
 }
 
